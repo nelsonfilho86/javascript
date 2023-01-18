@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var salario = Number(window.prompt('Qual o valor do seu salario mensal?'))
+        var bonus = Number(window.prompt('Qual o valor do seu bonus esse Mês?'))
+        var salmes = salario + bonus
+        var nome = window.prompt('Qual é o seu nome?')
+            document.write(`O seu nome tem ${nome.length} letras.<br/>`)//.length = tamanho
+             document.write(`Seu nome em letras maiusculas é ${nome.toUpperCase()}.<br/>`)//.toUpperCase()  = tudo maiusculas
+            document.write(`Seu nome em letras minusculas é ${nome.toLowerCase()}.<br/>`)//toLowerCase() = letras minusculas
+            document.write(`${salario} + ${bonus} Seu salario este Mês è de ${salmes.toFixed(2).replace('.', ',')}<br/>`)//fixar quantas casas decimais e mudar exibição de ponto para virgula
+            //abaixo mostrar valor de acordo com sua localidade e especificar a moeda corrent
+            document.write(`Valor em REAL ${salmes.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}<br/>`)
+            document.write(`Valor em DOLLAR ${salmes.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})}`)
+    </script>
+</body>
+</html>

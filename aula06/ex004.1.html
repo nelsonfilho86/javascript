@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratica</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2em;
+        }
+
+        strong {
+            background-color: chocolate;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+     var nome = window.prompt('qual é o seu nome ?')
+
+     var idade = window.prompt(`Qual a sua idade ?`)
+
+     var sfixo = Number(window.prompt('Qual o valor do seu salario fixo'))
+     var sbonus = Number(window.prompt('Qual o valor do seu bonus'))
+     var salario = sfixo + sbonus
+
+     document.write(`Ola, <strong>${nome}</strong>! o seu nome tem ${nome.length} letras.</br>`)
+     document.write(`Em letras maiusculas fica assim: <strong>${nome.toUpperCase()}</strong></br>`)
+     document.write(`Em letras minusculas fica assim: <strong>${nome.toLowerCase()}</strong></br>`)
+     document.write(`Sua idade é de: <strong>${idade} anos.</strong></br>`)
+     document.write(`Este mês voçe ganhou ${sfixo.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} de fixo + ${sbonus.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} de bonus, voçe vai receber ${salario.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} Reais.</br>`)
+     document.write(`Nome: ${nome}</br>Idade: ${idade}</br>Fixo mensal: ${sfixo}</br>Bonus mensal: ${sbonus}</br>Salario Mês: ${salario}</br>`)
+
+     document.write(`Nome: ${nome.toUpperCase()}</br>`)
+     document.write(`Idade: ${idade}</br>`)
+     document.write(`Salario fixo: ${sfixo.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}</br>`)
+     document.write(`Bonus: ${sbonus.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}</br>`)
+    document.write(`Vôçe vai receber ${salario.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} de salario este mês.`)
+    </script>
+</body>
+</html>
